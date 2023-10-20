@@ -1,0 +1,39 @@
+body {
+  background-color: rgb(60, 90, 20);
+  margin: 0;
+}
+
+#header-div {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(113, 179, 64);
+  height: 55px;
+}
+
+#themeSelect {
+  display: inline-block;
+  background-color: rgb(60, 90, 20);
+  color: white;
+  width: 125px;
+  height: 25px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  align-self: flex-end;
+  margin-right: 25px;
+  margin-top: 15px;
+}
+
+option {
+  font-size: 15px;
+  font-weight: bold;
+}
+#optionGreen {
+  background-color: rgb(60, 90, 20);
+}
+#optionRed {
+  background-color: rgb(145, 23, 31);
+}
+#optionPurple {
+  background-color: rgb(109, 61, 127);
+}

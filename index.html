@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="colours.js"></script>
+  </head>
+  <body data-colour="primary">
+    <header>
+      <div id="header-div" data-colour="accent">
+        <select
+          name="Theme"
+          id="themeSelect"
+          onchange="changeColour()"
+          data-colour="primary"
+        >
+          <option value="green" id="optionGreen">Green</option>
+          <option value="red" id="optionRed">Red</option>
+          <option value="purple" id="optionPurple">Purple</option>
+        </select>
+      </div>
+    </header>
+  </body>
+</html>
