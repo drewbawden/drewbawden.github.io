@@ -1,32 +1,115 @@
 body {
-  background-color: rgb(60, 90, 20);
+  background-color: rgb(29, 29, 29);
   margin: 0;
 }
 
 #header-div {
   display: flex;
-  flex-direction: column;
-  background-color: rgb(113, 179, 64);
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(59, 59, 59);
   height: 55px;
 }
 
-#themeSelect {
+#pageNav {
+  width: 60%;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+#pageNav ul{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+}
+#pageNav li {
+  list-style-type: none;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#pageNav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+}
+#pageNav a:hover, .dropdown:hover .dropbtn {
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+  height: 100%;
+}
+.dropdown-btn-div {
+  height: 100%;
+}
+.dropdown .dropbtn {
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 6px 4px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  vertical-align: middle;
+}
+.dropdown-content {
+  display: none;
+  align-self: center;
+  position: absolute;
+  min-width: 125px;
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  background-color: rgb(59, 59, 59);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+#selectDiv {
   display: inline-block;
-  background-color: rgb(60, 90, 20);
+}
+#themeSelect {
+  background-color: rgb(29, 29, 29);
   color: white;
   width: 125px;
   height: 25px;
   text-align: center;
   font-size: 15px;
   font-weight: bold;
-  align-self: flex-end;
   margin-right: 25px;
+  margin-left: 25px;
   margin-top: 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
-
 option {
   font-size: 15px;
   font-weight: bold;
+}
+#optionGrey {
+  background-color: rgb(29, 29, 29);
+}
+#optionBlue {
+  background-color: rgb(0, 7, 45);
 }
 #optionGreen {
   background-color: rgb(60, 90, 20);
@@ -36,4 +119,9 @@ option {
 }
 #optionPurple {
   background-color: rgb(109, 61, 127);
+}
+
+#mainContent {
+  height: 704px;
+  background-image: linear-gradient(rgb(29, 29, 29), rgb(59, 59, 59));
 }
