@@ -43,7 +43,4 @@ function changeColour() {
     for (let i = 0; i < accent_elems.length; i++) {
         accent_elems[i].style.backgroundColor = (currentColour[2])
     }
-
-    // main content
-    document.getElementById("mainContent").style.backgroundImage = ("linear-gradient(" + currentColour[0] + "," + currentColour[2] + ")")
 }

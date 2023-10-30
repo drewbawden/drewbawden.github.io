@@ -4,6 +4,13 @@
     <title>Featured Song</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="colours.js"></script>
+    <script src="randomSong.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body colour="primary">
     <header>
@@ -11,7 +18,7 @@
         <nav id="pageNav">
           <ul>
             <li>
-              <a href="index.html" colour="secondary">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li>
               <div class="dropdown">
@@ -44,6 +51,17 @@
       </div>
     </header>
 
-    <div id="mainContent"></div>
+    <div id="mainContent">
+      <div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/0/0c/Linkin_Park_Meteora_Album_Cover.jpg?20200315000424"
+          class="featuredImage"
+        />
+      </div>
+      <div id="textContent">
+        <h1 id="songTitle">Faint</h1>
+        <h2 id="songArtist">Linkin Park</h2>
+      </div>
+    </div>
   </body>
 </html>
