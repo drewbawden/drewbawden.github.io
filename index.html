@@ -8,7 +8,7 @@
   <body colour="primary">
     <header>
       <div id="header-div" colour="accent">
-        <nav id="pageNav">
+        <nav id="page-nav">
           <ul>
             <li>
               <a href="index.html">Home</a>
@@ -19,31 +19,39 @@
                   <button class="dropbtn">Featured</button>
                 </div>
                 <div class="dropdown-content">
-                  <a href="song.html" colour="accent">Song</a>
-                  <a href="artist.html" colour="accent">Artist</a>
-                  <a href="movie.html" colour="accent">Movie</a>
+                  <a href="projects.html" colour="accent">Projects</a>
+                  <a href="" colour="accent">Null</a>
+                  <a href="" colour="accent">Null</a>
                 </div>
               </div>
             </li>
           </ul>
         </nav>
-        <div id="selectDiv">
+        <div id="select-div">
           <select
             name="Theme"
-            id="themeSelect"
+            id="theme-select"
             onchange="changeColour()"
             colour="primary"
           >
-            <option value="grey" id="optionGrey">Grey</option>
-            <option value="blue" id="optionBlue">Blue</option>
-            <option value="green" id="optionGreen">Green</option>
-            <option value="red" id="optionRed">Red</option>
-            <option value="purple" id="optionPurple">Purple</option>
+            <option value="grey" id="option-grey">Grey</option>
+            <option value="blue" id="option-blue">Blue</option>
+            <option value="green" id="option-green">Green</option>
+            <option value="red" id="option-red">Red</option>
+            <option value="purple" id="option-purple">Purple</option>
           </select>
         </div>
       </div>
     </header>
-
-    <div id="mainContent"></div>
+    <div id="main-content">
+      <div id="lhalf">
+        <div class="content-div">
+          <img class="profile-picture" src="images/pfp.png" alt="" />
+        </div>
+      </div>
+      <div id="rhalf">
+        <div class="content-div"></div>
+      </div>
+    </div>
   </body>
 </html>
